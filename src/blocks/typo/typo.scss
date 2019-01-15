@@ -1,0 +1,79 @@
+// Этот блок ответственнен за типографику проекта.
+// Не пишите тут какую-либо стороннюю стилизацию.
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400&subset=cyrillic-ext');
+
+body {
+  font-family: $font-family;
+}
+
+h1, .head-h1 {
+  font-weight: 100;
+  font-size: 30px;
+
+  @media(min-width: $screen-md){
+
+  }
+  @media(min-width: $screen-lg){
+
+  }
+}
+
+h2, .head-h2 {
+  font-size: 24px;
+  font-weight: 100;
+
+  @media(min-width: $screen-md){
+
+  }
+  @media(min-width: $screen-lg){
+
+  }
+}
+
+h3, .head-h3 {
+  font-size: 15px;
+  font-weight: 100;
+
+  @media(min-width: $screen-md){
+    font-size: 17px;
+  }
+  @media(min-width: $screen-lg){
+    font-size: 19px;
+  }
+}
+
+p {
+  font-weight: 100;
+  line-height: 24px;
+  font-size: 18px;
+
+  @media(min-width: $screen-md){
+
+  }
+  @media(min-width: $screen-lg){
+
+  }
+}
+
+.text {
+  &--main {
+
+  }
+
+  &--promo {
+    color: $color-main--gold;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--center {
+    text-align: center;
+  }
+}
+
+strong {
+  font-weight: bold;
+}

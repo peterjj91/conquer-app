@@ -1,0 +1,133 @@
+// В этом файле должны быть стили для БЭМ-блока slick, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.slick {
+
+  $block-name:                &; // #{$block-name}__element {}
+
+  &-slider {
+    width: 100%;
+  }
+
+  &-loaded {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-drag {
+    overflow: hidden;
+  }
+
+  &-arrow {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    outline: none;
+    border: none;
+    font-size: 0;
+    padding: 0;
+    width: 16px;
+    height: 30px;
+    background-image: url(../img/direction.svg);
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 1;
+    outline: none !important;
+
+    @media(max-width: $screen-xxl){
+      right: auto;
+      left: auto;
+    }
+
+    &:hover {
+      background-image: url(../img/direction-gold.svg);
+    }
+
+    &.slick-prev {
+      margin-left: -630px;
+      margin-top: -22px;
+
+      @media(max-width: $screen-xxl){
+        margin: auto;
+        margin-top: 0px;
+        left: 20px;
+      }
+    }
+
+    &.slick-next {
+      margin-left: 619px;
+      margin-top: -36px;
+      transform: scale(-1);
+
+      @media(max-width: $screen-xxl){
+        margin: auto;
+        right: 20px;
+        margin-top: -15px;
+      }
+    }
+  }
+
+  &-dots {
+    position: absolute;
+    transform: translate(-50%, 0%);
+    bottom: 0px;
+    left: 50%;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+
+    @media(max-width: $screen-md) {
+      width: 100%;
+      text-align: center;
+    }
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      button {
+        padding: 0;
+        border: none;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        font-size: 0;
+        background-color: #d9d9d9;
+        outline: none;
+        cursor: pointer;
+        vertical-align: middle;
+
+        @include transition(all 0.2s ease)
+      }
+
+      &.slick-active {
+        button {
+          width: 14px;
+          height: 14px;
+          background-color: #a7a7a7;
+        }
+      }
+    }
+  }
+
+  &-stage-outer {
+    height: 100%;
+  }
+
+  &-stage {
+    height: 100%;
+
+    #{$block-name} {
+      &-item {
+        height: 100%;
+      }
+    }
+  }
+}

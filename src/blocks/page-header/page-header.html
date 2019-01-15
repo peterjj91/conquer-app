@@ -1,0 +1,611 @@
+<!--DEV
+
+Нужно убрать пробел между @-ами:
+
+@ @include('blocks/page-header/page-header.html')
+
+-->
+<header class="page-header" role="banner">
+    <div class="page-header__top">
+        <div class="page-header__container">
+            <div class="page-header__inner">
+                <div class="page-header__description">
+                    <div class="page-header__search">
+                        <input type="text" placeholder="Быстрый поиск . . ." class="input input__search">
+                    </div>
+                </div>
+
+                <div class="page-header__logo">
+                    <a href="/">@@include('../logo/logo.html')</a>
+                </div>
+
+                <div class="page-header__info">
+                    <a href="tel:+88312808202" class="page-header__tel">8 (831) 2-808-202</a>
+
+                    <div class="page-header__social">
+                        <ul class="share-social">
+                            <li>
+                                <a href="#">
+                                    <span class="social social--fb"></span>
+                                    <!--<svg width="16px" height="24px" fill="rgb(255, 255, 255)" stroke="rgb(153, 153, 153)">-->
+                                        <!--<use xlink:href="img/sprite-svg.svg#fb"></use>-->
+                                    <!--</svg>-->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="social social--youtube"></span>
+                                    <!--<svg width="24px" height="20px" stroke="rgb(153, 153, 153)" fill="rgb(255, 255, 255)">-->
+                                        <!--<use xlink:href="img/sprite-svg.svg#youtube"></use>-->
+                                    <!--</svg>-->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="social social--vk"></span>
+                                    <!--<svg width="26px" height="16px" fill="rgb(255, 255, 255)" stroke="rgb(153, 153, 153)">-->
+                                        <!--<use xlink:href="img/sprite-svg.svg#vk"></use>-->
+                                    <!--</svg>-->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="social social--instagram"></span>
+                                    <!--<svg width="18px" height="17px" stroke="rgb(153, 153, 153)" fill="rgb(194, 194, 194)">-->
+                                        <!--<use xlink:href="img/sprite-svg.svg#instagram"></use>-->
+                                    <!--</svg>-->
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page-header__bottom">
+        <div class="page-header__container">
+            @@include('../main-nav/main-nav.html')
+
+            <nav class="navbar navbar-light bg-light page-header__mobile-menu">
+                <div class="navbar-brand" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="burger page-header__burger">
+                        <span></span>
+                    </span>
+
+                    Меню
+                </div>
+
+                <ul class="page-header__card page-header__card--mobile">
+                    <li>
+                        <a href="#">
+                            <svg width="16px" height="19px" class="page-header__card__icon">
+                                <use xlink:href="img/sprite-svg.svg#star"></use>
+                            </svg>
+                            <span class="page-header__card__text">Избранное <sup>7</sup></span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <svg width="17px" height="14px" class="page-header__card__icon">
+                                <use xlink:href="img/sprite-svg.svg#diamand"></use>
+                            </svg>
+                            <span class="page-header__card__text">Корзина <sup>13</sup></span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <div class="container">
+                        <div class="navbar-brand" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="burger page-header__burger">
+                                <span></span>
+                            </span>
+
+                            Меню
+                        </div>
+
+                        <ul class="page-header__card page-header__card--mobile">
+                            <li class="active">
+                                <div class="burger active page-header__burger" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span></span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="panel-group panel-group--menu" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            <span class="panel-title__inner">Кольца</span>
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Обручальные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Помолвочные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Печатки</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Детские кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Православные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца на две фаланги</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца-трансформеры</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <span class="panel-title__inner">Серьги</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Обручальные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Помолвочные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Печатки</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Детские кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Православные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца на две фаланги</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца-трансформеры</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <span class="panel-title__inner">Подвески</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Обручальные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Помолвочные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Печатки</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Детские кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Православные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца на две фаланги</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца-трансформеры</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            <span class="panel-title__inner">Рубин</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="panel-body">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Обручальные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Помолвочные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Печатки</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Детские кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Православные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца на две фаланги</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца-трансформеры</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFive">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            <span class="panel-title__inner">Топаз</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                    <div class="panel-body">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Обручальные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Помолвочные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Печатки</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Детские кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Православные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца на две фаланги</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца-трансформеры</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingSix">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            <span class="panel-title__inner">Жемчуг</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                    <div class="panel-body">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Обручальные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Помолвочные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Печатки</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Детские кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Православные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца на две фаланги</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца-трансформеры</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingSeven">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                            <span class="panel-title__inner">Swarovski</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                    <div class="panel-body">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Обручальные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Помолвочные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Печатки</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Детские кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Православные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца на две фаланги</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца-трансформеры</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingEight">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                            <span class="panel-title__inner">Фианит</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                                    <div class="panel-body">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Обручальные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Помолвочные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Печатки</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Детские кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Православные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца на две фаланги</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца-трансформеры</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingNine">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                            <span class="panel-title__inner">Браслеты</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                                    <div class="panel-body">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Обручальные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Помолвочные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Печатки</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Детские кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Православные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца на две фаланги</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца-трансформеры</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTen">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                            <span class="panel-title__inner">Золотые украшения</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+                                    <div class="panel-body">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Обручальные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Помолвочные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Печатки</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Детские кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Православные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца на две фаланги</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца-трансформеры</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingEleven">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                            <span class="panel-title__inner">Серебряные украшения</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+                                    <div class="panel-body">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Обручальные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Помолвочные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Печатки</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Детские кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Православные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца на две фаланги</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца-трансформеры</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwelve">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                            <span class="panel-title__inner">Вставки</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
+                                    <div class="panel-body">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Обручальные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Помолвочные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Печатки</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Детские кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Православные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца на две фаланги</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца-трансформеры</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThirteen">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                                            <span class="panel-title__inner">Другое</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
+                                    <div class="panel-body">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Обручальные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Помолвочные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Печатки</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Детские кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Православные кольца</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца на две фаланги</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="a nav-link" href="#"><span class="nav-link__inner">Кольца-трансформеры</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <ul class="page-header__card">
+                <li>
+                    <a href="#">
+                        <svg width="16px" height="19px" class="page-header__card__icon">
+                            <use xlink:href="img/sprite-svg.svg#star"></use>
+                        </svg>
+                        <span class="page-header__card__text">Избранное <sup>7</sup></span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <svg width="17px" height="14px" class="page-header__card__icon">
+                            <use xlink:href="img/sprite-svg.svg#diamand"></use>
+                        </svg>
+                        <span class="page-header__card__text">Корзина <sup>13</sup></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>

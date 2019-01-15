@@ -1,0 +1,155 @@
+// В этом файле должны быть стили для БЭМ-блока bootstrap-select, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.bootstrap-select {
+
+  $block-name:                &; // #{$block-name}__element {}
+  outline: none !important;
+
+  &--simple {
+    @media(max-width: $screen-lg - 1){
+      width: 100% !important;
+    }
+
+    &.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+      width: auto;
+    }
+
+    .dropdown-toggle {
+      //padding: 0;
+      background-color: transparent;
+      border: none;
+      font-size: 15px;
+      outline: none !important;
+      box-shadow: none !important;
+      color: #333333 !important;
+      padding-right: 0;
+
+      @media(max-width: $screen-md){
+        padding-left: 0;
+      }
+
+      &:after {
+        content: "";
+        border: none;
+        display: inline-block;
+        transform: rotate(-90deg);
+        margin-top: 5px;
+        margin-right: 3px;
+        background-image: url(../img/direction.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 7px;
+        height: 13px;
+        margin-left: -10px;
+
+        @media(min-width: $screen-md){
+
+        }
+      }
+
+      &:focus {
+        outline: none !important;
+        background-color: transparent;
+      }
+
+      &:active {
+        background-color: transparent !important;
+      }
+
+      .filter-option {
+        display: inline-block;
+        position: relative;
+        padding: 0;
+
+        @media(min-width: $screen-md){
+          text-align: right;
+        }
+
+        &-inner {
+          padding-right: 20px;
+
+          &-inner {
+            display: inline-block;
+            border-bottom: 1px dotted #333333;
+          }
+        }
+      }
+    }
+
+    &.show {
+      .dropdown-toggle {
+        background-color: transparent;
+        outline: none !important;
+      }
+    }
+  }
+
+  &--main {
+    .dropdown-toggle {
+      background-color: white;
+      border: 1px solid #e6e6e6;
+      font-size: 15px;
+      outline: none !important;
+      box-shadow: none !important;
+      color: #333333 !important;
+      padding: 8px 12px 2px 12px;
+      border-radius: 0px;
+      letter-spacing: -0.5px;
+
+      @media(max-width: $screen-md){
+        padding-left: 0;
+      }
+
+      &:after {
+        content: "";
+        border: none;
+        transform: rotate(-90deg);
+        margin-top: 5px;
+        margin-right: 3px;
+        background-image: url(../img/direction.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 7px;
+        height: 13px;
+      }
+
+      &:focus {
+        outline: none !important;
+        background-color: white;
+      }
+
+      &:active {
+        background-color: white !important;
+      }
+
+      .filter-option {
+
+        @media(min-width: $screen-md){
+
+        }
+
+        &-inner {
+          padding-right: 17px;
+
+          &-inner {
+
+          }
+        }
+      }
+    }
+
+    select {
+      display: none !important;
+    }
+
+    &.show {
+      .dropdown-toggle {
+        background-color: white;
+        outline: none !important;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,89 @@
+// В этом файле должны быть стили только для БЭМ-блока form, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, $media-условий...
+// Не пишите здесь другие селекторы.
+
+.form {
+  $block-name: &;
+
+  &-group {
+    margin-bottom: 13px;
+
+    &:last-child {
+      //margin-bottom: 0;
+    }
+
+    label {
+      width: 100%;
+    }
+  }
+
+  &-control {
+    height: calc(2.375rem + 2px);
+    padding: 0.438rem 0.75rem;
+    border-radius: 0px;
+    border: 1px solid #f1f1f1;
+    background-color: #f9f9f9;
+    color: #666666;
+
+
+    &:focus {
+      color: #666666;
+      background-color: #fff;
+      border-color: $color-main--gold;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(199, 155, 56, 0.25);
+    }
+  }
+
+  &-promo {
+    .bootstrap-select {
+      width: 100% !important;
+    }
+
+    &--cart {
+      .btn {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        min-width: 250px;
+      }
+    }
+  }
+}
+
+.custom-control {
+  padding-left: 1.8rem;
+}
+
+.custom-control-label {
+  &:before, &:after {
+    width: 20px;
+    height: 20px;
+    //border-radius: 0px;
+    background-color: white;
+    border: 1px solid #f1f1f1;
+    top: 0;
+    left: -1.8rem;
+  }
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-image: url(../img/check.png);
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+textarea.form-control {
+  //min-height: 100px;
+}
+
+label {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+

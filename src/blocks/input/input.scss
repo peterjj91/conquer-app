@@ -1,0 +1,29 @@
+// В этом файле должны быть стили для БЭМ-блока input, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.input {
+
+  $block-name:                &; // #{$block-name}__element {}
+
+  background: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+  padding: 4px 10px 5px 22px;
+  width: auto;
+  outline: none;
+
+  @media(min-width: $screen-lg){
+    padding-right: 27px;
+    padding-top: 5px;
+  }
+
+  &__search {
+    background-image: url(../img/lightning.png);
+    background-repeat: no-repeat;
+    background-position: center left 10px;
+    font-size: 13px;
+    letter-spacing: -0.7px;
+    word-spacing: 0px;
+  }
+}

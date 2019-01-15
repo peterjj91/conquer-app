@@ -1,0 +1,53 @@
+// В этом файле должны быть стили только для БЭМ-блока logo, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Не пишите здесь другие селекторы.
+
+.logo {
+  //background-image: url(../img/logo.png);
+  background-image: url(../img/logo-2x.png);
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  width: 190px;
+  height: 60px;
+
+  @media(max-width: $screen-lg){
+    width: 176px;
+    height: 56px;
+  }
+
+  @media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    //background-image: url(../img/logo-2x.png);
+  }
+}
+
+.social {
+  display: inline-block;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position: center !important;
+
+  &--fb {
+    background-image: url(../img/social-fb.png);
+    width: 10px;
+    height: 18px;
+  }
+
+  &--instagram {
+    background-image: url(../img/social-instagram.png);
+    width: 16px;
+    height: 16px;
+  }
+
+  &--vk {
+    background-image: url(../img/social-vk.png);
+    width: 20px;
+    height: 11px;
+  }
+
+  &--youtube {
+    background-image: url(../img/social-youtube.png);
+    width: 18px;
+    height: 15px;
+  }
+}
