@@ -21,42 +21,5 @@
     @media(min-width: $screen-lg){
       padding-top: 26px;
     }
-
-    &:before {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      right: 0;
-      width: 479px;
-      height: 436px;
-      background: url("../img/main-background.png");
-      background-repeat: no-repeat;
-      background-position: top right;
-      display: none;
-
-      @media(min-width: $screen-lg) {
-        display: block;
-      }
-    }
-
-    &:after {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      transform: scale(-1);
-      bottom: 0;
-      left: 0;
-      width: 479px;
-      height: 436px;
-      background: url("../img/main-background.png");
-      background-repeat: no-repeat;
-      background-position: top right;
-      display: none;
-
-      @media(min-width: $screen-lg) {
-        display: block;
-      }
-    }
   }
 }

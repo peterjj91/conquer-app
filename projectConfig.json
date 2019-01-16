@@ -11,14 +11,15 @@
     "table": [],
     "sprite-svg": [],
     "form": [],
+    "input": [],
     "burger": [],
     "close": [],
     "modal": [],
     "grid": [],
     "dropdown": [],
-    "main-nav": [],
     "slick": [],
-    "bootstrap-select": []
+    "bootstrap-select": [],
+    "search-header": []
   },
   "addCssBefore": [
     "./node_modules/bootstrap/scss/bootstrap.scss",
