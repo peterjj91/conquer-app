@@ -961,6 +961,14 @@ $myriadPro-regular: 'MyriadPro-Regular';
 	font-weight: normal;
 	font-style: normal;
 }
+$myriadPro-bold: 'MyriadPro-Bold';
+@font-face {
+	font-family: 'MyriadPro-Bold';
+	src: url("#{$fa-font-path}/MyriadPro-Bold.eot");
+	src: local('☺'), url("#{$fa-font-path}/MyriadPro-Bold.woff") format('woff'), url("#{$fa-font-path}/MyriadPro-Bold.ttf") format('truetype'), url("#{$fa-font-path}/MyriadPro-Bold.svg") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 
 // Модульная сетка

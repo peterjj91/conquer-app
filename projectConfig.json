@@ -19,7 +19,13 @@
     "dropdown": [],
     "slick": [],
     "bootstrap-select": [],
-    "search-header": []
+    "search-header": [],
+    "main-nav": [],
+    "top-list": [],
+    "user-promo": [],
+    "search-quick": [],
+    "play-quick": [],
+    "post": []
   },
   "addCssBefore": [
     "./node_modules/bootstrap/scss/bootstrap.scss",

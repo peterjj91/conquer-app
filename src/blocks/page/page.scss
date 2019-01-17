@@ -14,12 +14,34 @@
   }
 
   &__main-content {
+    display: flex;
     flex: 1 0 auto;
     position: relative;
-    padding-top: 21px;
 
     @media(min-width: $screen-lg){
-      padding-top: 26px;
+
+    }
+
+    &__nav {
+      flex-basis: 236px;
+      background-color: #19171c;
+    }
+
+    &__main {
+      width: 100%;
+      flex: 1;
+      padding: 46px 20px;
+    }
+
+    &__sidebar {
+      flex-basis: 257px;
+      background-color: grey;
+    }
+  }
+
+  &__footer {
+    &-wrapper {
+      padding-bottom: 80px;
     }
   }
 }

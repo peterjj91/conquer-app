@@ -1,0 +1,55 @@
+// В этом файле должны быть стили для БЭМ-блока main-nav, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.main-nav {
+
+  $block-name:                &; // #{$block-name}__element {}
+  font-family: $myriadPro-bold;
+  margin-bottom: 25px;
+  
+  ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+
+    li {
+      display: block;
+      width: 100%;
+      margin-bottom: 3px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 23px 25px 19px 25px;
+    color: white;
+
+    &:hover, &:focus {
+      text-decoration: none;
+      color: white;
+    }
+
+    &.active {
+      background-color: #20ccb9;
+      // color: white;
+
+      // &:hover, &:focus {
+        
+      // }
+    }
+  }
+
+  &__img {
+    flex-basis: 72px;
+  }
+
+  &__text {
+    font-size: 24px;
+  }
+}

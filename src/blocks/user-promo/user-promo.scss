@@ -1,0 +1,109 @@
+// В этом файле должны быть стили для БЭМ-блока user-promo, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.user-promo {
+
+  $block-name:                &; // #{$block-name}__element {}
+  font-family: $myriadPro-regular;
+  padding-top: 2px;
+  padding-bottom: 10px;
+
+  &__list {
+    padding: 0;
+    // padding-top: 1px;
+    list-style: none;
+    margin: 0;
+    
+    li {
+      margin-bottom: -1px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__link {
+    background: transparent;
+    border: none;
+    display: flex;
+    width: 100%;
+    padding: 3px 8px;
+    align-items: center;
+    color: white;
+
+    &:hover, &:focus {
+      text-decoration: none;
+      color: white;
+      outline: none !important;
+    }
+  }
+  
+  &__img {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    margin-right: 9px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__description {
+    text-align: left;
+    font-size: 0;
+    padding-top: 5px;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 15px;
+    vertical-align: top;
+    margin-bottom: 1px;
+  }
+
+  &__chanel {
+    display: inline-block;
+    line-height: normal;
+    font-size: 13px;
+    color: white;
+    vertical-align: top;
+
+    &:hover, &:focus {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  &__recommend {
+    padding: 0px 7px;
+    margin-top: 31px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+
+    &__title {
+      color: white;
+      font-size: 15px;
+    }
+
+    #{$block-name} {
+      &__link {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      &__list {
+        margin-top: 7px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 2px;
+      }
+    }
+  }
+
+  &__search {
+    padding: 0px 8px;
+  }
+}

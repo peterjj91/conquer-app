@@ -8,7 +8,7 @@
   background-color: #111111;
 
   @media(min-width: $screen-lg){
-    border-bottom: 1px solid #e5e5e5;
+    // border-bottom: 1px solid #e5e5e5;
   }
 
   &__container {
@@ -16,7 +16,7 @@
   }
 
   &__inner {
-    height: 88px;
+    height: 87px;
     padding: 0px 25px;
 
     @media(min-width: $screen-lg){
@@ -80,7 +80,7 @@
       margin-left: 2px;
 
       &:last-child {
-        margin-right: 0;
+        margin-right: -6px;
       }
 
       &--cart {
