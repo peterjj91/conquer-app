@@ -1,0 +1,73 @@
+// В этом файле должны быть стили для БЭМ-блока promo-menu, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.promo-menu {
+
+  $block-name:                &; // #{$block-name}__element {}
+
+}
+
+.promo-menu {
+  text-align: left;
+  padding: 23px 25px 25px 35px;
+
+  &__burger {
+    //margin-bottom: 41px;
+    margin-bottom: 6vh;
+  }
+
+  &__nav {
+    padding: 0;
+    list-style: none;
+    font-size: 21px;
+    //margin-bottom: 50px;
+    margin-bottom: 7.7vh;
+
+    li {
+      width: 100%;
+      //margin-bottom: 22px;
+      margin-bottom: 3.3vh;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      color: white;
+    }
+  }
+
+  &__info {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20vh;
+
+    li {
+      width: 100%;
+      //margin-bottom: 19px;
+      margin-bottom: 2.8vh;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      color: white;
+    }
+  }
+  
+  &__post {
+    font-size: 15px;
+    line-height: 22px;
+    color: white;
+
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

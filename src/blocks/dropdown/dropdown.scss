@@ -12,9 +12,13 @@
       background: transparent;
       font-family: $myriadPro-regular;
       border: none;
-      padding: 5px 13px;
+      padding: 5px 5px;
       font-size: 16px;
       // margin-top: 3px;
+
+      @media(max-width: $screen-md) {
+        padding: 5px 13px;
+      }
 
       img {
         max-width: 38px;

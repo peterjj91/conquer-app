@@ -42,7 +42,11 @@
 
       &:first-child {
         text-align: left;
-        padding-left: 23px;
+        padding-left: 20px;
+
+        @media(min-width: $screen-lg){
+          padding-left: 23px;
+        }
       }
 
       &:last-child {

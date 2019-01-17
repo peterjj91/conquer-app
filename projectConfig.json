@@ -25,7 +25,9 @@
     "user-promo": [],
     "search-quick": [],
     "play-quick": [],
-    "post": []
+    "post": [],
+    "mobile-menu": [],
+    "promo-menu": []
   },
   "addCssBefore": [
     "./node_modules/bootstrap/scss/bootstrap.scss",
@@ -45,6 +47,7 @@
     "./node_modules/popper.js/dist/umd/popper.js",
     "./node_modules/bootstrap/dist/js/bootstrap.js",
     "./node_modules/object-fit-images/dist/ofi.js",
+    "./node_modules/slideout/dist/slideout.js",
     "./node_modules/slick-carousel/slick/slick.js",
     "./node_modules/bootstrap-select/dist/js/bootstrap-select.js",
     "./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js"

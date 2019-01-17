@@ -1,0 +1,39 @@
+<!--DEV
+
+Для использования этого файла как шаблона:
+
+@ @include('blocks/mobile-menu/mobile-menu.html')
+
+(Нужно убрать пробел между символами @)
+Подробнее: https://www.npmjs.com/package/gulp-file-include
+
+-->
+
+<nav id="menu-body" class="promo-menu">
+  <style>
+    .promo-menu {
+      display: none;
+    }
+  </style>
+  <div class="promo-menu__burger">
+    <span class="toggle-menu--inside mobile-menu mobile-menu--white active"><span></span></span>
+  </div>
+
+  <ul class="promo-menu__nav">
+    <li><a href="#">Albums</a></li>
+    <li><a href="#">Albums</a></li>
+    <li><a href="#">Albums</a></li>
+    <li><a href="#">Albums</a></li>
+  </ul>
+
+  <ul class="promo-menu__info">
+    <li><a href="#">Оплата</a></li>
+    <li><a href="#">Политика конфиденциальности</a></li>
+    <li><a href="#">Обработка персональных данных</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+
+  <div class="promo-menu__post">
+    <p>©2019 Conquer. Использование материалов сайта возможно только при наличии активной ссылки на первоисточник.</p>
+  </div>
+</nav>

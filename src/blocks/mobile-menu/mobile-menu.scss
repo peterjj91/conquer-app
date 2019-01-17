@@ -1,0 +1,183 @@
+// В этом файле должны быть стили для БЭМ-блока mobile-menu, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.mobile-menu {
+
+  $block-name:                &; // #{$block-name}__element {}
+
+}
+
+.slideout-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 294px;
+  min-height: 100vh;
+  background: #333333;
+
+  display: block !important;
+  height: 100%;
+  z-index: 100;
+  transition: right 0.1s; /** default on the right **/
+  overflow-y: hidden; /* makes the expanding nav scrollable */
+}
+
+.slideout-menu-left {
+  left: -294px;
+}
+
+.slideout-menu-right {
+  right: -294px;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  // will-change: transform;
+  background-color: #FFF; /* A background-color is required */
+  min-height: 100vh;
+}
+
+.slideout-open, .slideout-open body, .slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-panel {
+  transform: none !important;
+
+  &:before {
+    content: '';
+    display: block;
+    background-color: rgba(0,0,0,0);
+    transition: background-color cubic-bezier(.32,2,.55,.27);
+  }
+}
+
+.slideout-open {
+  .slideout-menu-left {
+    left: 0;
+  }
+
+  .slideout-menu-right {
+    right: 0;
+  }
+}
+
+.panel-open {
+  &:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    //background-color: rgba(0,0,0,.5);
+    background-color: transparent;
+    z-index: 99;
+  }
+}
+
+
+.mobile-menu {
+  display: inline-block;
+  vertical-align: top;
+  width: 26px;
+  height: 24px;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+  @media(max-width: $screen-sm){
+    display: inline-block;
+    width: 26px;
+    height: 22px;
+  }
+
+  &__wrapper {
+    top: 0;
+    right: 0;
+    padding: 28px 22px;
+    width: 78px;
+    height: 78px;
+    z-index: 4;
+    cursor: pointer;
+    @media(max-width: $screen-sm){
+      width: 68px;
+      height: 68px;
+      padding: 23px 20px;
+    }
+    @media(max-width: $screen-xs){
+      width: 50px;
+      height: 49px;
+      padding: 14px 12px;
+    }
+  }
+
+  span {
+    background-color: white;
+    height: 4px;
+    display: block;
+    width: 26px;
+    margin: 10px auto 0;
+    border-right: 1px;
+
+    @media(max-width: $screen-sm){
+      margin: 9px auto 0;
+      width: 26px;
+    }
+
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      width: 26px;
+      height: 4px;
+      top: inherit;
+      left: 0;
+      margin: auto;
+      border-radius: 1px;
+      background-color: white;
+
+      @media(max-width: $screen-md){
+        width: 26px;
+      }
+    }
+
+    &:before {
+      top: 0;
+    }
+
+    &:after {
+      bottom: 0;
+    }
+  }
+
+  &.active {
+    span {
+      background-color: transparent;
+
+      &:before {
+        transform: rotate(-45deg);
+        top: 10px;
+      }
+
+      &:after {
+        transform: rotate(45deg);
+        top: 10px;
+      }
+
+      &:before, &:after {
+        margin-top: 0;
+        //box-shadow: 0 0 0 1px white;
+      }
+    }
+  }
+
+  &--white {
+    span {
+      background-color: white;
+
+      &:before, &:after {
+        background-color: white;
+      }
+    }
+  }
+}

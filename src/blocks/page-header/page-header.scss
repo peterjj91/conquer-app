@@ -16,16 +16,27 @@
   }
 
   &__inner {
-    height: 87px;
-    padding: 0px 25px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
 
     @media(min-width: $screen-lg){
+      height: 87px;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: flex-start;
       align-content: space-between;
-      align-items: center;
+    }
+  }
+
+  &__burger {
+    display: block;
+
+    @media(min-width: $screen-lg) {
+      display: none;
     }
   }
 
@@ -54,25 +65,21 @@
 
   &__logo {
     text-align: center;
-    margin-right: 11.7%;
+    margin-right: 37px;
 
-    @media(max-width: $screen-lg){
-
-    }
-    @media(min-width: $screen-lg){
-      // flex: 1;
-      //text-align: center;
+    @media(min-width: 1350px){
+      margin-right: 11.7%;
     }
   }
 
   &__content {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
+    display: none;
     // align-self: baseline;
 
-    @media(max-width: $screen-lg){
-      
+    @media(min-width: $screen-lg){
+      margin-left: auto;
+      display: flex;
+      align-items: center;
     }
 
     .dropdown-simple {
@@ -92,7 +99,11 @@
   &__info {
     font-size: 16px;
     letter-spacing: -0.3px;
-    margin-right: 60px;
+    margin-right: 0;
+
+    @media(min-width: 1350px){
+      margin-right: 60px;
+    }
 
     &__text {
       color: #3f3f3f;
@@ -120,15 +131,32 @@
   }
 
   &__search {
-    width: 100%; 
+    width: 100%;
+    display: none;
 
+    @media(min-width: $screen-sm){
+      
+    }
     @media(min-width: $screen-md){
       
     }
     @media(min-width: $screen-lg){
+      display: inline-block;
+      max-width: 300px;
+    }
+    @media(min-width: 1150px) {
       max-width: 376px;
     }
-
     
+  }
+
+  .dropdown-simple {
+    &--notification {
+      display: none;
+      
+      @media(min-width: 1350px){
+        display: inline-block;
+      }
+    }
   }
 }

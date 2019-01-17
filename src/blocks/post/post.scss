@@ -18,10 +18,15 @@
 
   &__header {
     // flex-wrap: wrap;
-    padding: 13px 25px 10px 25px;
+    padding: 13px 20px 10px 20px;
     border-bottom: 0px;
     border: 1px solid rgba(74, 74, 74, 0.23);
     margin-bottom: 7px;
+
+    @media(min-width: $screen-md){
+      padding-left: 25px;
+      padding-right: 25px;
+    }
 
     &__main {
       display: flex;
@@ -184,6 +189,9 @@
     min-height: 45px;
     margin-bottom: 4px;
 
+    @media(min-width: $screen-md){
+    }
+
     &__wrapper {
       & + * {
         margin-top: 7px;
@@ -239,12 +247,16 @@
     }
 
     &__side {
-      min-width: 57px;
+      min-width: 45px;
       border: 1px solid rgba(74, 74, 74, 0.23);
       display: flex;
       align-items: center;
       justify-content: center;
       white-space: nowrap;
+
+      @media(min-width: $screen-md){
+        min-width: 57px;
+      }
 
       .btn {
         padding: 0px 5px;
@@ -256,11 +268,12 @@
     border: 1px solid rgba(74, 74, 74, 0.23);
     font-size: 15px;
     text-align: center;
-    padding: 12px 25px 12px 25px; 
+    padding: 12px 20px 12px 20px; 
     margin-bottom: 7px;
 
-    & + * {
-      // margin-top: 26px;
+    @media(min-width: $screen-md){
+      padding-left: 20px;
+      padding-right: 25px;
     }
 
     p {
@@ -333,10 +346,17 @@
     margin-bottom: 6px;
 
     &__block {
-      flex:1 1 calc(33.33% - 30px);
+      flex:1 1 calc(50% - 30px);
       margin: 0px 5px 5px 5px;
       position: relative;
       overflow: hidden;
+
+      @media(min-width: $screen-md){
+        // flex:1 1 calc(50% - 30px);
+      }
+      @media(min-width: $screen-lg){
+        flex:1 1 calc(33.33% - 30px);
+      }
     }
 
     &__img {

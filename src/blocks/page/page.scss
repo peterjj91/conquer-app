@@ -23,25 +23,47 @@
     }
 
     &__nav {
-      flex-basis: 236px;
+      display: none;
       background-color: #19171c;
+
+      @media(min-width: $screen-md){
+        display: block;
+        flex-basis: 200px; 
+      }
+      @media(min-width: $screen-lg){
+        flex-basis: 236px;
+      }
     }
 
     &__main {
       width: 100%;
       flex: 1;
-      padding: 46px 20px;
+      padding: 20px 20px;
+
+      @media(min-width: $screen-md){
+        padding-top: 46px;
+        padding-bottom: 46px;
+      }
     }
 
     &__sidebar {
-      flex-basis: 257px;
+      display: none;
       background-color: grey;
+
+      @media(min-width: 1350px){
+        display: block;
+        flex-basis: 257px;
+      }
     }
   }
 
   &__footer {
     &-wrapper {
-      padding-bottom: 80px;
+      padding-bottom: 50px;
+
+      @media(min-width: 1350px){
+        padding-bottom: 80px;
+      }
     }
   }
 }

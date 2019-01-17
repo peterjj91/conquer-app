@@ -27,8 +27,12 @@
   &__link {
     display: flex;
     align-items: center;
-    padding: 23px 25px 19px 25px;
+    padding: 15px 20px 12px 20px;
     color: white;
+
+    @media(min-width: $screen-lg) {
+      padding: 23px 25px 19px 25px;
+    }
 
     &:hover, &:focus {
       text-decoration: none;
@@ -37,11 +41,6 @@
 
     &.active {
       background-color: #20ccb9;
-      // color: white;
-
-      // &:hover, &:focus {
-        
-      // }
     }
   }
 
@@ -50,6 +49,10 @@
   }
 
   &__text {
-    font-size: 24px;
+    font-size: 20px;
+
+    @media(min-width: $screen-lg) {
+      font-size: 24px;
+    }
   }
 }

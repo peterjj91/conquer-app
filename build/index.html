@@ -21,7 +21,37 @@
 </head>
 
 <body>
-  <div class="page__content">
+
+  <nav id="menu-body" class="promo-menu">
+    <style>
+      .promo-menu {
+        display: none;
+      }
+    </style>
+    <div class="promo-menu__burger">
+      <span class="toggle-menu--inside mobile-menu mobile-menu--white active"><span></span></span>
+    </div>
+
+    <ul class="promo-menu__nav">
+      <li><a href="#">Albums</a></li>
+      <li><a href="#">Albums</a></li>
+      <li><a href="#">Albums</a></li>
+      <li><a href="#">Albums</a></li>
+    </ul>
+
+    <ul class="promo-menu__info">
+      <li><a href="#">Оплата</a></li>
+      <li><a href="#">Политика конфиденциальности</a></li>
+      <li><a href="#">Обработка персональных данных</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+
+    <div class="promo-menu__post">
+      <p>©2019 Conquer. Использование материалов сайта возможно только при наличии активной ссылки на первоисточник.</p>
+    </div>
+  </nav>
+  
+  <div class="page__content" id="panel-body">
     <header class="page-header" role="banner">
       <!-- <div class="page-header__container"> -->
       <div class="page-header__inner">
@@ -84,6 +114,10 @@
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
           </div>
+        </div>
+
+        <div class="page-header__burger">
+          <span class="toggle-menu mobile-menu"><span></span></span>
         </div>
       </div>
       <!-- </div> -->
@@ -974,7 +1008,7 @@
       </div>
 
       <div class="page__main-content__sidebar">
-        2
+        
       </div>
     </main>
 

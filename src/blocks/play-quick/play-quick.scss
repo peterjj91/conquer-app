@@ -11,18 +11,42 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 80px;
+  height: 50px;
   background-color: #464646;
 
+  @media(min-width: 1350px){
+    height: 80px;
+  }
+
   &__btn {
-    flex-basis: 370px;
+    flex-basis: 100px; 
     text-align: center;
+
+    @media(min-width: 1350px){
+      flex-basis: 370px; 
+    }
+    @media(min-width: $screen-lg){
+      flex-basis: 236px;
+    }
 
     .btn {
       background-color: transparent;
       border: none;
       padding: 0;
-      margin: 0px 15px;
+      margin: 0px 5px;
+
+      @media(min-width: $screen-lg){
+        margin-right: 15px;
+        margin-left: 15px;
+      }
+
+      img {
+        height: 20px;
+
+        @media(min-width: 1350px){
+          height: auto;
+        }
+      }
     }
   }
 
@@ -32,7 +56,11 @@
     border-radius: 0px;
     height: 100%;
     margin-left: 0px;
-    margin-right: 94px;
+    margin-right: 10px;
+
+    @media(min-width: 1350px){
+      margin-right: 94px;
+    }
 
     &__passed {
       background-color: #20ccb9;
@@ -41,16 +69,42 @@
 
   &__volume {
     margin-left: auto;
+
+    @media(min-width: 1350px){
+    }
+
+    img {
+      height: 20px;
+
+      @media(min-width: 1350px){
+        height: auto;
+      }
+    }
   }
 
   &__search {
-    height: 100%;
-    display: flex;
-    flex-basis: 357px;
-    margin-left: 32px;
+    display: none;
+    
+    @media(min-width: $screen-lg){
+      height: 100%;
+      display: flex;
+      flex-basis: 200px;
+    }
+    @media(min-width: 1350px){
+      flex-basis: 357px;
+      margin-left: 32px;
+    }
 
     &__btn {
       background-color: transparent;
+
+      img {
+        height: 20px;
+
+        @media(min-width: 1350px){
+          height: auto;
+        }
+      }
     }
 
     &__input {
