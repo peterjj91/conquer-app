@@ -7202,8 +7202,8 @@ strong {
 .page-header__content {
     display: none; }
 .page-header__content .dropdown-simple {
-      margin-right: 2px;
-      margin-left: 2px; }
+      margin-right: 11px;
+      margin-left: 11px; }
 .page-header__content .dropdown-simple:last-child {
         margin-right: -6px; }
 .page-header__info {
