@@ -16,7 +16,7 @@
     li {
       display: block;
       width: 100%;
-      margin-bottom: 3px;
+      margin-bottom: 2px;
 
       &:last-child {
         margin-bottom: 0;
@@ -31,7 +31,7 @@
     color: white;
 
     @media(min-width: $screen-lg) {
-      padding: 23px 25px 19px 25px;
+      padding: 24px 25px 20px 25px;
     }
 
     &:hover, &:focus {

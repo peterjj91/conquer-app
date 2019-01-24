@@ -21,14 +21,8 @@ $border-radius:               3px !default;
   outline: none !important;
   box-shadow: none !important;
   //user-select: none;
-  border: $btn-border-width solid transparent;
-  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
-  @include transition($btn-transition);
-
-  // Share hover and focus styles
-  @include hover-focus {
-    //text-decoration: none;
-  }
+  background-color: transparent;
+  border: 1px solid transparent;
 
   &:focus,
   &.focus {
@@ -70,11 +64,11 @@ $border-radius:               3px !default;
       box-shadow: 0 0 0 0.2rem rgba(199, 155, 56, 0.5);
     }
 
-    @include hover-focus {
-      background-color: $color-main--gold;
-      border-color: $color-main--gold;
-      color: white;
-    }
+    //@include hover-focus {
+      //background-color: $color-main--gold;
+      //border-color: $color-main--gold;
+      //color: white;
+    //}
 
     &.active {
       background-color: $color-main--gold;
@@ -113,12 +107,6 @@ $border-radius:               3px !default;
       border-color: $color-main--gold;
       color: white;
       box-shadow: 0 0 0 0.2rem rgba(199, 155, 56, 0.5);
-    }
-
-    @include hover-focus {
-      background-color: $color-main--gold;
-      border-color: $color-main--gold;
-      color: white;
     }
 
     &.active {

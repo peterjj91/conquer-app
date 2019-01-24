@@ -4,121 +4,14 @@
   <meta charset="utf-8">
   <title>Сенат - Index</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="format-detection" content="telephone=no">
-
-  <link href="css/style.min.css?1" rel="stylesheet" media="screen">
-
-  <script>
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-    var ua = window.navigator.userAgent.toLowerCase(),
-    isIE = (/trident/gi).test(ua) || (/msie/gi).test(ua);
-    if(isIE) document.documentElement.classList.add('ie');
-  </script>
-
-  <!--<link href="img/favicon.ico" rel="icon" type="image/x-icon">-->
-
+  @@include('_include/page_head.html')
 </head>
 
 <body>
-
-  <nav id="menu-body" class="promo-menu">
-    <style>
-      .promo-menu {
-        display: none;
-      }
-    </style>
-    <div class="promo-menu__burger">
-      <span class="toggle-menu--inside mobile-menu mobile-menu--white active"><span></span></span>
-    </div>
-
-    <ul class="promo-menu__nav">
-      <li><a href="#">Albums</a></li>
-      <li><a href="#">Albums</a></li>
-      <li><a href="#">Albums</a></li>
-      <li><a href="#">Albums</a></li>
-    </ul>
-
-    <ul class="promo-menu__info">
-      <li><a href="#">Оплата</a></li>
-      <li><a href="#">Политика конфиденциальности</a></li>
-      <li><a href="#">Обработка персональных данных</a></li>
-      <li><a href="#">Контакты</a></li>
-    </ul>
-
-    <div class="promo-menu__post">
-      <p>©2019 Conquer. Использование материалов сайта возможно только при наличии активной ссылки на первоисточник.</p>
-    </div>
-  </nav>
+  @@include("blocks/mobile-menu/mobile-menu.html")
   
   <div class="page__content" id="panel-body">
-    <header class="page-header" role="banner">
-      <!-- <div class="page-header__container"> -->
-      <div class="page-header__inner">
-        <div class="page-header__logo">
-          <a href="/"><div class="logo"></div>
-</a>
-        </div>
-
-        <div class="page-header__search">
-
-          <div class="search-header">
-            <input type="text" placeholder="search songs, albums, genres..." class="input search-header__input">
-            <button class="btn search-header__btn"></button>
-          </div>
-
-        </div>
-
-        <div class="page-header__content">
-          <div class="page-header__info">
-            <p class="page-header__info__text">Your shop consultant is</p>
-            <p class="page-header__info__text page-header__info__text--light">
-              <a href="#" class="">Amanda Ridinger</a>
-            </p>
-          </div>
-      
-          <div class="dropdown dropdown-simple dropdown-simple--notification">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="img/notification.svg" alt="">
-            </button>
-
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-            </ul>
-          </div>
-
-          <div class="dropdown dropdown-simple dropdown-simple--profile">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="img/sign-in.svg" alt="">
-              <span>Sign In</span>
-            </button>
-  
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-            </ul>
-          </div>
-
-          <div class="dropdown dropdown-simple dropdown-simple--cart">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="img/shopping-cart-white.svg" alt="">
-              <span>Cart</span>
-            </button>
-  
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="page-header__burger">
-          <span class="toggle-menu mobile-menu"><span></span></span>
-        </div>
-      </div>
-      <!-- </div> -->
-    </header>
+    @@include('blocks/page-header/page-header.html')
 
     <main class="page__main-content" role="main">
       <div class="page__main-content__nav">
@@ -488,15 +381,7 @@
           </div>
 
           <div class="user-promo__search">
-
-            <div class="search-quick">
-              <input type="text" class="search-quick__input" placeholder="Search to Add Friends">
-
-              <button class="btn search-quick__btn">
-                <img src="img/search-white.svg" alt="">
-              </button>
-            </div>
-
+            @@include('blocks/search-quick/search-quick.html')
           </div>
         </div>
       </div>
@@ -582,78 +467,14 @@
     </main>
 
     <div class="page__footer-wrapper">
-      <footer class="page-footer" role="contentinfo">
-        <div class="container">
-          <div class="page-footer__inner">
-            <div class="page-footer__content">
-              <div class="page-footer__nav">
-                <ul>
-                  <li>
-                    <a href="#">Logout</a>
-                  </li>
-                  <li>
-                    <a href="#">Demo Artist</a>
-                  </li>
-                  <li>
-                    <a href="#">$0.64</a>
-                  </li>
-                </ul>
-              </div>
+      @@include('blocks/page-footer/page-footer.html')
 
-              <div class="page-footer__search">
-                <a href="#">
-                  <img src="img/search-white-2.svg" width="14px" alt="">
-                </a>
-              </div>
-        
-              <div class="page-footer__cart">
-                <a href="#" class="page-footer__cart__btn">
-                  <img src="img/shopping-cart-reverse.svg" width="24px"  alt="">
-
-                  $1999.0
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      <div class="play-quick">
-        <div class="play-quick__btn">
-          <button class="btn">
-            <img src="img/player-play.svg" alt="">
-          </button>
-
-          <button class="btn">
-            <img src="img/skip-next.svg" alt="">
-          </button>
-        </div>
-
-        <div class="play-quick__time progress">
-          <div class="play-quick__time__passed progress-bar" role="progressbar" style="width: 122px;" aria-valuenow="122" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-
-        <div class="play-quick__volume">
-          <button class="btn">
-            <img src="img/volume.svg" alt="">
-          </button>
-        </div>
-
-        <div class="play-quick__search">
-          <button class="btn play-quick__search__btn">
-            <img src="img/search-white.svg" alt="">
-          </button>
-
-          <input type="text" class="input play-quick__search__input">
-        </div>
-      </div>
-
+      @@include('blocks/play-quick/play-quick.html')
     </div>
   </div>
 
   <script src="js/moment-with-locales.js"></script>
-  <script src="js/script.min.js"></script>
-
+  @@include('_include/page_bottom.html')
 </body>
 
 </html>

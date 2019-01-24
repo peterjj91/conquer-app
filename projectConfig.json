@@ -30,10 +30,9 @@
     "promo-menu": []
   },
   "addCssBefore": [
-    "./node_modules/bootstrap/scss/bootstrap.scss",
+    "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss",
     "./node_modules/font-awesome/scss/font-awesome.scss",
     "./src/scss/variables.scss",
-    "./src/scss/mixins.scss",
     "../../node_modules/slick-carousel/slick/slick.scss",
     "../../node_modules/bootstrap-select/sass/bootstrap-select.scss",
     "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css"
@@ -45,7 +44,7 @@
     "./node_modules/jquery-mousewheel/jquery.mousewheel.js",
     "./node_modules/svg4everybody/dist/svg4everybody.js",
     "./node_modules/popper.js/dist/umd/popper.js",
-    "./node_modules/bootstrap/dist/js/bootstrap.js",
+    "./node_modules/bootstrap-sass/assets/javascripts/bootstrap.js",
     "./node_modules/object-fit-images/dist/ofi.js",
     "./node_modules/slideout/dist/slideout.js",
     "./node_modules/slick-carousel/slick/slick.js",

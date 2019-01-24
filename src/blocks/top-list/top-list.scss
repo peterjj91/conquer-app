@@ -4,7 +4,7 @@
 
 .top-list {
 
-  $block-name:                &; // #{$block-name}__element {}
+  $block-name: &; // #{$block-name}__element {}
   text-align: center;
   margin-bottom: 22px;
 
@@ -13,6 +13,7 @@
     text-decoration: underline;
     text-decoration-color: #00fbdb;
     margin-bottom: 11px;
+    font-size: 16px;
     padding: 0px 10px;
   }
 

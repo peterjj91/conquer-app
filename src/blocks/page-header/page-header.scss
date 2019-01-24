@@ -6,6 +6,9 @@
   $block-name: &;
   position: relative;
   background-color: #111111;
+  margin: 0;
+  border: none;
+  padding: 0;
 
   @media(min-width: $screen-lg){
     // border-bottom: 1px solid #e5e5e5;
